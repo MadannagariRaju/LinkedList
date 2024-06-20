@@ -10,7 +10,7 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        if(head == null || head.next == null) {
+       /* if(head == null || head.next == null) {
             return head;
         }
         ListNode current = head;
@@ -22,6 +22,19 @@ class Solution {
             prev= current;
             current = temp;
         }
-        return prev;
+        return prev;  */
+
+        Stack<Integer>st = new Stack<>();
+        ListNode cur = head;
+        while(cur!=null) {
+            st.push(cur.val);
+            cur= cur.next;
+        }
+        cur = head;
+        while(cur!=null) {
+            cur.val = st.pop();
+            cur = cur.next;
+        }
+        return head;
     }
 }
