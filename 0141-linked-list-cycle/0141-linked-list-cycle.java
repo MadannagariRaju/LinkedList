@@ -12,7 +12,7 @@
 public class Solution {
     public boolean hasCycle(ListNode head) {
 
-        if(head == null || head.next == null) return false;
+       /* if(head == null || head.next == null) return false;
         HashMap<ListNode , Integer>map = new HashMap<>();
         ListNode temp = head;
         while(temp != null) {
@@ -24,9 +24,9 @@ public class Solution {
             }
             temp = temp.next;
         }
-        return false;
+        return false; */
 
-       /* if(head == null) return false;
+        if(head == null) return false;
         ListNode slow = head;
         ListNode fast = head;
 
@@ -35,6 +35,6 @@ public class Solution {
             fast = fast.next.next;
             if(slow == fast) return true;
         }
-        return false; */
+        return false; 
     }
 }
