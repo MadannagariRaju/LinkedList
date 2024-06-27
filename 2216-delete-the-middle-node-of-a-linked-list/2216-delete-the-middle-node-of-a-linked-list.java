@@ -17,6 +17,7 @@ class Solution {
             head = null;
             return head;
         }
+        /*
         int size =0;
         ListNode temp = head;
         while(temp != null) {
@@ -34,6 +35,17 @@ class Solution {
         stemp.next = stemp.next.next;
         System.out.println(stemp.val);
         return head;
-        
+        */
+
+        ListNode slow =head;
+        ListNode fast = head;
+        fast = fast.next.next;
+
+        while(fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        slow.next = slow.next.next;
+        return head;
     }
 }
