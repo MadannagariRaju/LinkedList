@@ -1,0 +1,72 @@
+/*
+
+Definition for singly Link List Node
+class Node
+{
+    int data;
+    Node next,prev;
+    
+    Node(int x){
+        data = x;
+        next = null;
+        prev = null;
+    }
+}
+
+You can also use the following for printing the link list.
+Node.printList(Node node);
+*/
+
+class Solution {
+    public static ArrayList<ArrayList<Integer>> findPairsWithGivenSum(int target, Node head) {
+        // code here
+        ArrayList<ArrayList<Integer>>al = new ArrayList<>();
+        
+       /* Node temp1 = head;
+        Node temp2 = temp1.next;
+        while(temp1 != null && temp2 !=null) {
+            while(temp2 != null) {
+               int sum = temp1.data + temp2.data;
+               if(sum == target) {
+                   ArrayList<Integer>pairs = new ArrayList<>();
+                //   System.out.println(sum);
+                   pairs.add(temp1.data);
+                   pairs.add(temp2.data);
+                //   System.out.println(al1);
+                   al.add(pairs);
+               }else if(sum > target) {
+                   break;
+               }
+               temp2 = temp2.next;
+            }
+            temp1=temp1.next;
+            temp2 = temp1.next;
+        }
+        return al; */
+        /* The above gives you TLE as it's Time complexity is ~ O(n^2)*/
+        
+        Node first = head;
+        Node last = head;
+        while(last.next != null) {
+            last = last.next;
+        }
+        // System.out.println(last.data);
+        while(first.data < last.data) {
+            int sum = first.data + last.data;
+            if(sum == target) {
+                ArrayList<Integer>pairs = new ArrayList<>();
+                pairs.add(first.data);
+                pairs.add(last.data);
+                al.add(pairs);
+                first = first.next;
+                last = last.prev;
+            }
+            else if(sum > target) {
+                last = last.prev;
+            }else if(sum < target){
+                first = first.next;
+            }
+        }
+        return al;
+    }
+}
