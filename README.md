@@ -28,5 +28,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0007-reverse-integer](https://github.com/MadannagariRaju/LinkedList/tree/master/0007-reverse-integer) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/MadannagariRaju/LinkedList/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 <!---LeetCode Topics End-->
