@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1582-design-browser-history](https://github.com/MadannagariRaju/LinkedList/tree/master/1582-design-browser-history) |
+| [3321-type-of-triangle](https://github.com/MadannagariRaju/LinkedList/tree/master/3321-type-of-triangle) |
 ## Linked List
 |  |
 | ------- |
@@ -30,4 +31,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0007-reverse-integer](https://github.com/MadannagariRaju/LinkedList/tree/master/0007-reverse-integer) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/MadannagariRaju/LinkedList/tree/master/3172-divisible-and-non-divisible-sums-difference) |
+| [3321-type-of-triangle](https://github.com/MadannagariRaju/LinkedList/tree/master/3321-type-of-triangle) |
+## Sorting
+|  |
+| ------- |
+| [3321-type-of-triangle](https://github.com/MadannagariRaju/LinkedList/tree/master/3321-type-of-triangle) |
 <!---LeetCode Topics End-->
